@@ -1,16 +1,22 @@
-# DNA Sequence Analyzer
+# CS50 DNA Analyzer
 
-A Python script that identifies a person based on a DNA sequence using STR (Short Tandem Repeats) matching.  
-Built as part of Harvard's CS50x pset6 assignment.
+This is a Python script built for Harvard's CS50x course. It determines a person's identity by comparing a DNA sequence against a database of short tandem repeats (STRs).
 
-## Features
-- Reads a database of DNA STR counts (CSV file)
-- Reads a DNA sequence from a text file
-- Matches STR counts to identify the individual
+## Files
+
+- `dna.py`: The main Python script that performs the DNA analysis.
+- `data.csv`: A sample DNA database with STR counts for individuals.
+- `sequence.txt`: A sample DNA sequence to be analyzed.
+
+## How it works
+
+The script:
+1. Loads a database of people and their STR counts from a CSV file.
+2. Loads a DNA sequence from a text file.
+3. Finds the longest run of each STR in the DNA sequence.
+4. Compares the STR counts to the database to identify a matching person.
 
 ## Usage
-
-Run the script from the command line with the database and sequence files as arguments:
 
 ```bash
 python dna.py data.csv sequence.txt
